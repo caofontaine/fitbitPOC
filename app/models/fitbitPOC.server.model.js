@@ -3,10 +3,10 @@
 var mongoose = require('mongoose');
     Schema = mongoose.Schema;
 
-var fitbitPOC = mongoose.Schema({
+var fitbit0916 = mongoose.Schema({
 	Date: String,
-	CaloriesBurned: String,
-	Steps: Number,
+	CaloriesBurned: Number,
+	NumSteps: Number,
 	Distance: Number,
 	Floors: Number,
 	MinutesSedentary: Number,
@@ -17,4 +17,11 @@ var fitbitPOC = mongoose.Schema({
 },
 {collection: 'fitbit0916'});
 
-mongoose.model('fitbitPOC', fitbitPOC);
+var fitbitSpecific = mongoose.Schema({
+	Date: String,
+	NumSteps: Number
+},
+{collection: 'fitbit0916'});
+
+mongoose.model('fitbit0916', fitbit0916); //Register model name with schema.
+mongoose.model('fitbitSpecific', fitbitSpecific);

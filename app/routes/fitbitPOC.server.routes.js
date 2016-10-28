@@ -6,4 +6,7 @@ var fitbitPOC = require('../../app/controllers/fitbitPOC.server.controller')
 module.exports = function(app) {
 	app.route('/api/fitbitPOC/fitbit0916')
 		.get(fitbitPOC.list);
+		
+	app.route('/api/fitbitPOC/test')
+		.get(fitbitPOC.test);
 };
