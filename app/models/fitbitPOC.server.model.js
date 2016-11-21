@@ -4,22 +4,22 @@ var mongoose = require('mongoose');
     Schema = mongoose.Schema;
 
 var fitbit0916 = mongoose.Schema({
-	Date: String,
-	CaloriesBurned: Number,
-	NumSteps: Number,
-	Distance: Number,
-	Floors: Number,
-	MinutesSedentary: Number,
-	MinutesLightlyActive: Number,
-	MinutesFairlyActive: Number,
-	MinutesVeryActive: Number,
-	ActivityCalories: Number
+  Date: String,
+  CaloriesBurned: Number,
+  NumSteps: Number,
+  Distance: Number,
+  Floors: Number,
+  MinutesSedentary: Number,
+  MinutesLightlyActive: Number,
+  MinutesFairlyActive: Number,
+  MinutesVeryActive: Number,
+  ActivityCalories: Number
 },
 {collection: 'fitbit0916'});
 
 var fitbitSpecific = mongoose.Schema({
-	Date: String,
-	NumSteps: Number
+  Date: String,
+  NumSteps: Number
 },
 {collection: 'fitbit0916'});
 

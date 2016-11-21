@@ -1,5 +1,5 @@
 /*Database criteria.*/
 
 module.exports = {
-   url : 'mongodb://localhost/fitbitPOC'
+  url : 'mongodb://localhost/fitbitPOC'
 };

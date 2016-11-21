@@ -4,9 +4,9 @@ var database = require('./database'),
     mongoose = require('mongoose');
 		
 module.exports = function() {
-	var db = mongoose.connect(database.url);
+  var db = mongoose.connect(database.url);
 	
-	require('../app/models/fitbitPOC.server.model');
+  require('../app/models/fitbitPOC.server.model');
 	
-	return db;
+  return db;
 }

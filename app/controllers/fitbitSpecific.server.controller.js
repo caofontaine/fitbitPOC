@@ -4,12 +4,12 @@
 var fitbitSpecific = require('mongoose').model('fitbitSpecific');
 
 exports.test = function(req, res, next) {	
-	fitbitSpecific.find({}, 'Date Steps', function (err, fitbitSpecifics) {
+  fitbitSpecific.find({}, 'Date Steps', function (err, fitbitSpecifics) {
     if (err) {
-			return next(err);
-		}
-		else {
-			res.json(fitbitSpecifics);
-		}
+      return next(err);
+    }
+    else {
+      res.json(fitbitSpecifics);
+    }
   }).sort({Date: 1});
 };
